@@ -14,29 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MAX98357AETE+T:MAX98357AETE+T U1
-U 1 1 60E48754
-P 4450 1350
-F 0 "U1" H 5100 1615 50  0000 C CNN
-F 1 "MAX98357AETE+T" H 5100 1524 50  0000 C CNN
-F 2 "MAX98357AETE+T:Maxim_Electronics-21-0896-0-0-0" H 4450 1750 50  0001 L CNN
-F 3 "http://datasheets.maximintegrated.com/en/ds/MAX98357A-MAX98357B.pdf" H 4450 1850 50  0001 L CNN
-F 4 "IC" H 4450 1950 50  0001 L CNN "category"
-F 5 "Amplifier IC 2-Channel (Stereo) Class D 16-TQFN (3x3)" H 4450 2050 50  0001 L CNN "digikey description"
-F 6 "MAX98357AETE+T-ND" H 4450 2150 50  0001 L CNN "digikey part number"
-F 7 "yes" H 4450 2250 50  0001 L CNN "lead free"
-F 8 "0f54a4b5bdb80fd2" H 4450 2350 50  0001 L CNN "library id"
-F 9 "Maxim Electronics" H 4450 2450 50  0001 L CNN "manufacturer"
-F 10 "700-MAX98357AETE+T" H 4450 2550 50  0001 L CNN "mouser part number"
-F 11 "TQFN16" H 4450 2650 50  0001 L CNN "package"
-F 12 "yes" H 4450 2750 50  0001 L CNN "rohs"
-F 13 "+85°C" H 4450 2850 50  0001 L CNN "temperature range high"
-F 14 "+40°C" H 4450 2950 50  0001 L CNN "temperature range low"
-F 15 "" H 4450 3050 50  0001 L CNN "voltage"
-	1    4450 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x07_Male J1
 U 1 1 60E49D45
 P 1850 2150
@@ -87,163 +64,6 @@ Wire Wire Line
 	2550 1650 2550 1850
 Wire Wire Line
 	2550 1850 2050 1850
-Text GLabel 4450 1650 0    50   Input ~ 0
-DIN
-Text GLabel 4450 1850 0    50   Input ~ 0
-GAIN
-Text GLabel 4450 2050 0    50   Input ~ 0
-LRCLK
-Text GLabel 4450 2250 0    50   Input ~ 0
-SD
-Text GLabel 4450 2450 0    50   Input ~ 0
-BCLK
-$Comp
-L power:VCC #PWR0103
-U 1 1 60E4C3FC
-P 4150 1250
-F 0 "#PWR0103" H 4150 1100 50  0001 C CNN
-F 1 "VCC" H 4165 1423 50  0000 C CNN
-F 2 "" H 4150 1250 50  0001 C CNN
-F 3 "" H 4150 1250 50  0001 C CNN
-	1    4150 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 1250 4150 1350
-Wire Wire Line
-	4150 1450 4450 1450
-Wire Wire Line
-	4450 1350 4150 1350
-Connection ~ 4150 1350
-Wire Wire Line
-	4150 1350 4150 1450
-$Comp
-L power:GND #PWR0104
-U 1 1 60E4CCD9
-P 6250 2600
-F 0 "#PWR0104" H 6250 2350 50  0001 C CNN
-F 1 "GND" H 6255 2427 50  0000 C CNN
-F 2 "" H 6250 2600 50  0001 C CNN
-F 3 "" H 6250 2600 50  0001 C CNN
-	1    6250 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 1650 6250 1650
-Wire Wire Line
-	6250 1650 6250 1750
-Wire Wire Line
-	5750 1750 6250 1750
-Connection ~ 6250 1750
-Wire Wire Line
-	6250 1750 6250 1850
-Wire Wire Line
-	5750 1850 6250 1850
-Connection ~ 6250 1850
-Wire Wire Line
-	6250 1850 6250 1950
-Wire Wire Line
-	5750 1950 6250 1950
-Connection ~ 6250 1950
-Wire Wire Line
-	6250 1950 6250 2150
-Wire Wire Line
-	5750 2150 6250 2150
-Connection ~ 6250 2150
-Wire Wire Line
-	6250 2150 6250 2250
-Wire Wire Line
-	5750 2250 6250 2250
-Connection ~ 6250 2250
-Wire Wire Line
-	6250 2250 6250 2350
-Wire Wire Line
-	5750 2350 6250 2350
-Connection ~ 6250 2350
-Wire Wire Line
-	6250 2350 6250 2450
-Wire Wire Line
-	5750 2450 6250 2450
-Connection ~ 6250 2450
-Wire Wire Line
-	6250 2450 6250 2600
-Text GLabel 5750 1350 2    50   Input ~ 0
-LEFTN
-Text GLabel 5750 1450 2    50   Input ~ 0
-LEFTP
-$Comp
-L pspice:CAP C1
-U 1 1 60E4E9B6
-P 3150 1800
-F 0 "C1" H 3328 1846 50  0000 L CNN
-F 1 "10uF" H 3328 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3150 1800 50  0001 C CNN
-F 3 "~" H 3150 1800 50  0001 C CNN
-	1    3150 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:CAP C2
-U 1 1 60E4F255
-P 3650 1800
-F 0 "C2" H 3828 1846 50  0000 L CNN
-F 1 "100nF" H 3828 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3650 1800 50  0001 C CNN
-F 3 "~" H 3650 1800 50  0001 C CNN
-	1    3650 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0105
-U 1 1 60E4F87F
-P 3400 1350
-F 0 "#PWR0105" H 3400 1200 50  0001 C CNN
-F 1 "VCC" H 3415 1523 50  0000 C CNN
-F 2 "" H 3400 1350 50  0001 C CNN
-F 3 "" H 3400 1350 50  0001 C CNN
-	1    3400 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 60E4FF00
-P 3400 2200
-F 0 "#PWR0106" H 3400 1950 50  0001 C CNN
-F 1 "GND" H 3405 2027 50  0000 C CNN
-F 2 "" H 3400 2200 50  0001 C CNN
-F 3 "" H 3400 2200 50  0001 C CNN
-	1    3400 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 1550 3400 1550
-Wire Wire Line
-	3150 2050 3400 2050
-Wire Wire Line
-	3400 2200 3400 2050
-Connection ~ 3400 2050
-Wire Wire Line
-	3400 2050 3650 2050
-Wire Wire Line
-	3400 1350 3400 1550
-Connection ~ 3400 1550
-Wire Wire Line
-	3400 1550 3150 1550
-$Comp
-L Connector:Screw_Terminal_01x02 J2
-U 1 1 60E51DCE
-P 6900 1350
-F 0 "J2" H 6980 1342 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 6980 1251 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6900 1350 50  0001 C CNN
-F 3 "~" H 6900 1350 50  0001 C CNN
-	1    6900 1350
-	1    0    0    -1  
-$EndComp
-Text GLabel 6700 1450 0    50   Input ~ 0
-LEFTN
-Text GLabel 6700 1350 0    50   Input ~ 0
-LEFTP
 $Comp
 L MAX98357AETE+T:MAX98357AETE+T U2
 U 1 1 60E58077
@@ -439,4 +259,204 @@ Wire Wire Line
 	4000 4600 3850 4600
 Wire Wire Line
 	4200 4600 4500 4600
+Text GLabel 6700 1350 0    50   Input ~ 0
+LEFTP
+Text GLabel 6700 1450 0    50   Input ~ 0
+LEFTN
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 60E51DCE
+P 6900 1350
+F 0 "J2" H 6980 1342 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6980 1251 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6900 1350 50  0001 C CNN
+F 3 "~" H 6900 1350 50  0001 C CNN
+	1    6900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1550 3150 1550
+Connection ~ 3400 1550
+Wire Wire Line
+	3400 1350 3400 1550
+Wire Wire Line
+	3400 2050 3650 2050
+Connection ~ 3400 2050
+Wire Wire Line
+	3400 2200 3400 2050
+Wire Wire Line
+	3150 2050 3400 2050
+Wire Wire Line
+	3650 1550 3400 1550
+$Comp
+L power:GND #PWR0106
+U 1 1 60E4FF00
+P 3400 2200
+F 0 "#PWR0106" H 3400 1950 50  0001 C CNN
+F 1 "GND" H 3405 2027 50  0000 C CNN
+F 2 "" H 3400 2200 50  0001 C CNN
+F 3 "" H 3400 2200 50  0001 C CNN
+	1    3400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 60E4F87F
+P 3400 1350
+F 0 "#PWR0105" H 3400 1200 50  0001 C CNN
+F 1 "VCC" H 3415 1523 50  0000 C CNN
+F 2 "" H 3400 1350 50  0001 C CNN
+F 3 "" H 3400 1350 50  0001 C CNN
+	1    3400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C2
+U 1 1 60E4F255
+P 3650 1800
+F 0 "C2" H 3828 1846 50  0000 L CNN
+F 1 "100nF" H 3828 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3650 1800 50  0001 C CNN
+F 3 "~" H 3650 1800 50  0001 C CNN
+	1    3650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C1
+U 1 1 60E4E9B6
+P 3150 1800
+F 0 "C1" H 3328 1846 50  0000 L CNN
+F 1 "10uF" H 3328 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3150 1800 50  0001 C CNN
+F 3 "~" H 3150 1800 50  0001 C CNN
+	1    3150 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 1450 2    50   Input ~ 0
+LEFTP
+Text GLabel 5750 1350 2    50   Input ~ 0
+LEFTN
+Wire Wire Line
+	6250 2450 6250 2600
+Connection ~ 6250 2450
+Wire Wire Line
+	5750 2450 6250 2450
+Wire Wire Line
+	6250 2350 6250 2450
+Connection ~ 6250 2350
+Wire Wire Line
+	5750 2350 6250 2350
+Wire Wire Line
+	6250 2250 6250 2350
+Connection ~ 6250 2250
+Wire Wire Line
+	5750 2250 6250 2250
+Wire Wire Line
+	6250 2150 6250 2250
+Connection ~ 6250 2150
+Wire Wire Line
+	5750 2150 6250 2150
+Wire Wire Line
+	6250 1950 6250 2150
+Connection ~ 6250 1950
+Wire Wire Line
+	5750 1950 6250 1950
+Wire Wire Line
+	6250 1850 6250 1950
+Connection ~ 6250 1850
+Wire Wire Line
+	5750 1850 6250 1850
+Wire Wire Line
+	6250 1750 6250 1850
+Connection ~ 6250 1750
+Wire Wire Line
+	5750 1750 6250 1750
+Wire Wire Line
+	6250 1650 6250 1750
+Wire Wire Line
+	5750 1650 6250 1650
+$Comp
+L power:GND #PWR0104
+U 1 1 60E4CCD9
+P 6250 2600
+F 0 "#PWR0104" H 6250 2350 50  0001 C CNN
+F 1 "GND" H 6255 2427 50  0000 C CNN
+F 2 "" H 6250 2600 50  0001 C CNN
+F 3 "" H 6250 2600 50  0001 C CNN
+	1    6250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1350 4150 1450
+Connection ~ 4150 1350
+Wire Wire Line
+	4450 1350 4150 1350
+Wire Wire Line
+	4150 1450 4450 1450
+Wire Wire Line
+	4150 1250 4150 1350
+$Comp
+L power:VCC #PWR0103
+U 1 1 60E4C3FC
+P 4150 1250
+F 0 "#PWR0103" H 4150 1100 50  0001 C CNN
+F 1 "VCC" H 4165 1423 50  0000 C CNN
+F 2 "" H 4150 1250 50  0001 C CNN
+F 3 "" H 4150 1250 50  0001 C CNN
+	1    4150 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 2450 0    50   Input ~ 0
+BCLK
+Text GLabel 4450 2250 0    50   Input ~ 0
+SD
+Text GLabel 4450 2050 0    50   Input ~ 0
+LRCLK
+Text GLabel 4450 1850 0    50   Input ~ 0
+GAIN
+Text GLabel 4450 1650 0    50   Input ~ 0
+DIN
+$Comp
+L MAX98357AETE+T:MAX98357AETE+T U1
+U 1 1 60E48754
+P 4450 1350
+F 0 "U1" H 5100 1615 50  0000 C CNN
+F 1 "MAX98357AETE+T" H 5100 1524 50  0000 C CNN
+F 2 "MAX98357AETE+T:Maxim_Electronics-21-0896-0-0-0" H 4450 1750 50  0001 L CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX98357A-MAX98357B.pdf" H 4450 1850 50  0001 L CNN
+F 4 "IC" H 4450 1950 50  0001 L CNN "category"
+F 5 "Amplifier IC 2-Channel (Stereo) Class D 16-TQFN (3x3)" H 4450 2050 50  0001 L CNN "digikey description"
+F 6 "MAX98357AETE+T-ND" H 4450 2150 50  0001 L CNN "digikey part number"
+F 7 "yes" H 4450 2250 50  0001 L CNN "lead free"
+F 8 "0f54a4b5bdb80fd2" H 4450 2350 50  0001 L CNN "library id"
+F 9 "Maxim Electronics" H 4450 2450 50  0001 L CNN "manufacturer"
+F 10 "700-MAX98357AETE+T" H 4450 2550 50  0001 L CNN "mouser part number"
+F 11 "TQFN16" H 4450 2650 50  0001 L CNN "package"
+F 12 "yes" H 4450 2750 50  0001 L CNN "rohs"
+F 13 "+85°C" H 4450 2850 50  0001 L CNN "temperature range high"
+F 14 "+40°C" H 4450 2950 50  0001 L CNN "temperature range low"
+F 15 "" H 4450 3050 50  0001 L CNN "voltage"
+	1    4450 1350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8050 3050 2900 3050
+Wire Notes Line
+	2900 3050 2900 950 
+Wire Notes Line
+	2900 950  8050 950 
+Wire Notes Line
+	8050 950  8050 3050
+Wire Notes Line
+	2900 3200 8050 3200
+Wire Notes Line
+	8050 3200 8050 5400
+Wire Notes Line
+	8050 5400 2900 5400
+Wire Notes Line
+	2900 5400 2900 3200
+Text Notes 7500 3000 0    50   ~ 0
+Left Channel
+Text Notes 7450 5350 0    50   ~ 0
+Right Channel
 $EndSCHEMATC
